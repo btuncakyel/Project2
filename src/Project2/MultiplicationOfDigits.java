@@ -8,7 +8,7 @@ public class MultiplicationOfDigits {
         //1. Write a program that will accept only 6 digit numbers like 578432
         // and find multiplication(5*7*8*4*3*2) of all digits and sum(5+7+8+4+3+2)of all digits.
 
-        int number = 578436;
+        int number = 578435;
 
         int digit1 = number % 10;
         number = number /10;
