@@ -18,6 +18,7 @@ public class Task2 {
         System.out.println("Please enter ending value");
         int ending = input.nextInt();
 
+
        String newString =  string.substring(starting-1,ending);
         System.out.println(newString);
 
