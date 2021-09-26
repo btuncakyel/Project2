@@ -19,10 +19,12 @@ public class Student {
     int age;
 
 
-    public void sleep(){
+
+    public void sleep(String place){
         int hour = generateHour();
 
-        System.out.println(name + " " + lastName + " is sleeping "+ generateHour() + " hours");
+        System.out.println(name + " " + lastName + " is sleeping "+ place+ hour + " hours");
+        study(); // since sleep and study methods are non static it can be called without object
 
     }
     public void study(){
@@ -51,9 +53,10 @@ public class Student {
         student1.lastName = "Sina";
         student1.age = 36;
 
-        student1.sleep();
+        student1.sleep("in class ");
         student1.study();
         student1.run();
+
 
 
 
