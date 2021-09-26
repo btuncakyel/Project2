@@ -26,6 +26,9 @@ public class CupTest {
         c1 = null;
         Cup c4 = c1; // reassigning
         // this two are garbage. whole object is gone
+
+        Cup c5 = new Cup(22,false);
+        c5 = null;
         System.gc();
 
 
