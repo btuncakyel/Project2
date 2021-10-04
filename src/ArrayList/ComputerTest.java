@@ -20,7 +20,7 @@ public class ComputerTest {
         computers.add(com4);
 
         // com1.findComputer(computers); if it not static you can also call the method because you are already create an object
-        Computer.findComputer(computers);  // you can call static method with class name
+        Computer.findComputer(computers);  // you can call static method with class name if it is in different class
         System.out.println("***********************************");
         com1.findComputer1(computers);   // you can call static or non static method with help of object
 

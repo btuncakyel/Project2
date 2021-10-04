@@ -41,22 +41,31 @@ public class Practice2 {
 
         printFruits(fruitsNames);
 
-        //if there is no static
+        //if the method is not static we need to create an object and call the method
         //Practice2 object = new Practice2();
         //object.printFruits(fruitNames);
 
     }
-    //remove the short fruit names from the arrayList
 
     public static void printFruits(ArrayList<String> fruits){
 
-//        for (String fruit : fruits){
-//            if (fruit.length() >= 5){
-//                System.out.println(fruit);
-//            }
-//        }
+        for (String fruit : fruits){
+            if (fruit.length() >= 5){
+                System.out.println(fruit);
+            }
+        }
+    }
+    //remove the short fruit names from the arrayList
 
-       // for loop buraya yaz videadana bakip eksik
+    public void printFruit(ArrayList<String > fruits){
+        for (int i = 0; i < fruits.size(); i++){
+            if (fruits.get(i).length() <= 5){
+                fruits.remove(i);
+            }else {
+                System.out.println(fruits.get(i));
+            }
+        }
+        System.out.println(fruits);
     }
 
 
