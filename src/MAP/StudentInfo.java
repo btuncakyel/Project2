@@ -54,6 +54,16 @@ public class StudentInfo {
         System.out.println(list);
 
 
+        // If student list is 'Chicago' create  an email adress as 'chiaco@gmail.com
+
+        for (int j = 0; j < list.size(); j++ ){
+            if (list.get(j).get("City").equalsIgnoreCase("Chicago")){
+                System.out.println(list.get(j).get("first name").concat("chicago@gmail.com"));
+            }
+
+        }
+
+
         // if student less than 20, shows their name
 
       for (int i = 0; i < list.size(); i++){
@@ -70,6 +80,8 @@ public class StudentInfo {
             System.out.println(list.get(i).entrySet());
 
         }
+
+
 
     }
 
