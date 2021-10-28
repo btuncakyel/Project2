@@ -1,0 +1,77 @@
+package Java.Mentoring.Map;
+
+import java.util.Collections;
+import java.util.*;
+
+public class CountVowels {
+    /*
+    Vowels are a,e,i,o,u.
+  You can assume every string is having vowel .
+  Create a function to find most common vowels and print out the apperances of vowels from given Java.String. If vowel counts are tied print out counts in alphabetical order.
+  For example: If given string is "ComeHere"
+  Output should be e appears 3 times.
+ If given string is "oouuaaTech"
+ output should be a appears 2 times o appears 2 times u appears 2 times
+ If given string is "ieTcd"
+ Output should be e appears 1 time i appears 1 time
+     */
+
+    // First we need to find count of every vowel
+    // Then from those counts we need to find maximum count
+    // Last step we should print all the vowels which have maximum count
+
+    public static void solution(String str) {
+
+        String vowels = "aeiou";
+        Map<String, Integer> countMap = new TreeMap();
+        for (int i = 0; i < str.length(); i++) {
+
+
+            String currentLetter = str.charAt(i) + "";
+            if (vowels.contains(currentLetter)) {
+                // It means this letter is vowel
+                if (!countMap.containsKey(currentLetter)) {
+                    countMap.put(currentLetter, 1);
+                } else {
+                    // First we need to find count of this vowel from map and
+                    // increase by one
+                    int count = countMap.get(currentLetter) + 1;
+                    countMap.put(currentLetter, count);
+                }
+
+            }
+
+        } //  i will have map vowels and count of every vowel
+
+        // ["a:3","e:2"]
+        // How can we find maximum count from map?
+        // We can find in one line
+        // Return type of values method is collection
+
+        int maximumCount = Collections.max(countMap.values());
+
+        // Last step we should print all the vowels which have maximum count
+        Set<String> keys = countMap.keySet();
+        for (String key : keys) {
+            if (maximumCount == 1) {
+                // If the key has maximum value
+                if (countMap.get(key) == maximumCount) {
+                    System.out.println(key + " appears " + maximumCount + " time");
+                }
+            } else {
+                if (countMap.get(key) == maximumCount) {
+                    System.out.println(key + " appears " + maximumCount + " times");
+                }
+            }
+
+        }
+    }
+
+    public static void main(String[] args) {
+        String str = "aeiouaeii";
+        solution(str);
+
+
+
+    }
+}
