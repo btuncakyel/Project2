@@ -1,4 +1,4 @@
-package OOP.Inheritance1;
+package Java.OOP.Inheritance1;
 
 public class Flower {
 
