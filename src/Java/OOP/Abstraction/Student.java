@@ -1,4 +1,4 @@
-package OOP.Abstraction;
+package Java.OOP.Abstraction;
 
 public abstract class Student {
 
@@ -13,7 +13,7 @@ public abstract class Student {
         this.name = name;
         this.age = age;
     }
-    //    public static void main(String[] args) {
+    //    public static void main(Java.String[] args) {
 //
 //        Student student = new Student();   // you cannot create a object in abstract class
 //

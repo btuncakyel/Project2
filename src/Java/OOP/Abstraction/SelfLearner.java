@@ -1,4 +1,4 @@
-package OOP.Abstraction;
+package Java.OOP.Abstraction;
 
 public abstract class SelfLearner extends Student {
 

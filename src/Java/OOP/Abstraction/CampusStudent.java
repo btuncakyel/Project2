@@ -1,4 +1,4 @@
-package OOP.Abstraction;
+package Java.OOP.Abstraction;
 
 public class CampusStudent extends Student{
 
@@ -15,7 +15,7 @@ public class CampusStudent extends Student{
        return 8;
     }
 
-    //Methods should be defined with 'Abstract' keyword and first extending class(first child class)
+    //Java.Methods should be defined with 'Abstract' keyword and first extending class(first child class)
     //  should implement the abstract methods
     //  that regular child class is called 'Concrete' class
 }

@@ -1,4 +1,4 @@
-package Switch;
+package Java.Switch;
 
 public class Practice1 {
     public static void main(String[] args) {

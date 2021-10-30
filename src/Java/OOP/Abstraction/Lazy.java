@@ -1,4 +1,4 @@
-package OOP.Abstraction;
+package Java.OOP.Abstraction;
 
 public abstract class Lazy extends OnlineStudent{
     // this is a regular class and we make abstract class
